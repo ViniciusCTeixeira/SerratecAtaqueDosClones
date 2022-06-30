@@ -59,8 +59,18 @@ const FeedStyles = StyleSheet.create({
         paddingBottom: 6
     },
     feed_post_image:{
-        height: "100%",
-        width: "100%",
+        resizeMode: "cover",
+        height: 400,
+        width: 400,
+    },
+    feed_post_actions:{
+        paddingHorizontal: 10,
+        flexDirection: "row",
+        marginBottom: 10
+    },
+    feed_post_actions_icons:{
+        height: 30,
+        width: 30,
     },
 });
 

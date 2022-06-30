@@ -5,6 +5,8 @@ import FeedStyles from "../../assets/styles/feed";
 
 import Logo from "../../assets/images/logo.png"
 import SendIcons from "../../assets/icons/sent.png"
+import ChatIcons from "../../assets/icons/chat.png"
+import LikeIcons from "../../assets/icons/like.png"
 import PersonIcons from "../../assets/icons/person.png"
 
 export default function Feed() {
@@ -62,6 +64,11 @@ export default function Feed() {
                         <Text style={FeedStyles.feed_post_text}>Seu Post</Text>
                         <Image source={{uri: PostImage}} style={FeedStyles.feed_post_image}/>
                     </View>
+                    <View style={FeedStyles.feed_post_actions}>
+                        <Image source={LikeIcons} style={FeedStyles.feed_post_actions_icons}/>
+                        <Image source={ChatIcons} style={FeedStyles.feed_post_actions_icons}/>
+                        <Image source={SendIcons} style={FeedStyles.feed_post_actions_icons}/>
+                    </View>
                 </View>
 
                 <View style={FeedStyles.feed}>
@@ -73,6 +80,11 @@ export default function Feed() {
                     <View style={FeedStyles.feed_post}>
                         <Text style={FeedStyles.feed_post_text}>Seu Post</Text>
                         <Image source={{uri: PostImage}} style={FeedStyles.feed_post_image}/>
+                    </View>
+                    <View style={FeedStyles.feed_post_actions}>
+                        <Image source={LikeIcons} style={FeedStyles.feed_post_actions_icons}/>
+                        <Image source={ChatIcons} style={FeedStyles.feed_post_actions_icons}/>
+                        <Image source={SendIcons} style={FeedStyles.feed_post_actions_icons}/>
                     </View>
                 </View>
             </ScrollView>
