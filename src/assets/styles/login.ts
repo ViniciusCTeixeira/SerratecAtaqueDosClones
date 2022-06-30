@@ -51,7 +51,6 @@ const LoginStyles = StyleSheet.create({
     },
     login_form_separator: {
         fontSize: 18,
-        marginVertical: 10,
         fontWeight: "bold",
     },
     login_footer: {

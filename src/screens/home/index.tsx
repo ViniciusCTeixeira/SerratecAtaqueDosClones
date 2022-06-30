@@ -1,5 +1,6 @@
 import React from 'react'
 import {Text, View, StatusBar, Image, ScrollView} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
 import Styles from "../../assets/styles/general";
 import FeedStyles from "../../assets/styles/feed";
 
@@ -13,7 +14,7 @@ export default function Feed() {
     const PostImage = "https://source.unsplash.com/random";
     return (
         <View style={Styles.container}>
-            <StatusBar />
+            <StatusBar/>
             <View style={FeedStyles.header}>
                 <Image source={Logo} style={FeedStyles.header_image}/>
                 <Image source={SendIcons} style={FeedStyles.header_icon}/>

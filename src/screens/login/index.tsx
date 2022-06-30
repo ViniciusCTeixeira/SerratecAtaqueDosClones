@@ -9,19 +9,22 @@ import FacebookIcon from "../../assets/icons/faceboob_icon.png"
 export default function Login() {
     return (
         <View style={Styles.container}>
-            <StatusBar />
+            <StatusBar/>
             <View style={LoginStyles.login_select_language}>
                 <Text>português (Brasil)</Text>
             </View>
             <View style={LoginStyles.login_form}>
                 <Image style={LoginStyles.login_form_logo} source={LoginImage}/>
-                <TextInput style={LoginStyles.login_form_input} placeholder="Numero de telefone, email ou nome de usuário"/>
+                <TextInput style={LoginStyles.login_form_input}
+                           placeholder="Numero de telefone, email ou nome de usuário"/>
                 <TextInput style={LoginStyles.login_form_input} placeholder="Senha"/>
                 <TouchableOpacity style={LoginStyles.login_form_button}>
                     <Text style={LoginStyles.login_form_button_text}>Entrar</Text>
                 </TouchableOpacity>
-                <TouchableOpacity><Text style={Styles.text_sm}>Esqueceu seus dados de login? <Text style={{color: "#0095f6"}}>Obter ajuda para entrar.</Text></Text></TouchableOpacity>
-                <Text style={LoginStyles.login_form_separator}>OU</Text>
+                <TouchableOpacity>
+                    <Text style={Styles.text_sm}>Esqueceu seus dados de login? <Text style={{color: "#0095f6"}}>Obter ajuda para entrar.</Text></Text>
+                </TouchableOpacity>
+                <Text style={LoginStyles.login_form_separator}>━━━━━━━━━━━ OU ━━━━━━━━━━━</Text>
                 <View style={LoginStyles.login_form_facebook}>
                     <Image style={LoginStyles.login_form_facebook_icon} source={FacebookIcon}/>
                     <View style={LoginStyles.login_form_facebook_text}>
