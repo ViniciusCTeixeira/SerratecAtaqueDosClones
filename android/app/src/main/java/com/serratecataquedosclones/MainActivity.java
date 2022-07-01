@@ -10,14 +10,12 @@ import com.facebook.react.ReactRootView;
 import expo.modules.ReactActivityDelegateWrapper;
 
 public class MainActivity extends ReactActivity {
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    // Set the theme to AppTheme BEFORE onCreate to support 
-    // coloring the background, status bar, and navigation bar.
-    // This is required for expo-splash-screen.
-    setTheme(R.style.AppTheme);
-    super.onCreate(null);
-  }
+   // Add this method.
+      @Override
+      protected void onCreate(Bundle savedInstanceState) {
+          SplashScreen.show(this);
+          super.onCreate(savedInstanceState);
+      }
 
   /**
    * Returns the name of the main component registered from JavaScript.

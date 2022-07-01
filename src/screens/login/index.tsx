@@ -17,7 +17,7 @@ export default function Login() {
                 <Image style={LoginStyles.login_form_logo} source={LoginImage}/>
                 <TextInput style={LoginStyles.login_form_input}
                            placeholder="Numero de telefone, email ou nome de usuário"/>
-                <TextInput style={LoginStyles.login_form_input} placeholder="Senha"/>
+                <TextInput style={LoginStyles.login_form_input} secureTextEntry={true} placeholder="Senha"/>
                 <TouchableOpacity style={LoginStyles.login_form_button}>
                     <Text style={LoginStyles.login_form_button_text}>Entrar</Text>
                 </TouchableOpacity>

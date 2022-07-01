@@ -4,6 +4,6 @@ import Feed from "./screens/home";
 
 export default function App() {
   return (
-    <Login/>
+    <Feed/>
   );
 }
